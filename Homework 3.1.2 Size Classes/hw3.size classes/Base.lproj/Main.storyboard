@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework_3_1_1_Size_Classes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VaY-en-iA7">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5RT-ov-h9m">
+                                <rect key="frame" x="10" y="10" width="790" height="1060"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HKJ-9g-Pbj">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1060"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-2v-HYo" customClass="RoundedView" customModule="Homework_3_1_1_Size_Classes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="522.5"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yui-wA-6NU" customClass="RoundedView" customModule="Homework_3_1_1_Size_Classes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="537.5" width="390" height="522.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rFh-PL-9zu">
+                                        <rect key="frame" x="400" y="0.0" width="390" height="1060"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkI-Wa-KsM" customClass="RoundedView" customModule="Homework_3_1_1_Size_Classes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="522.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FH3-PW-W9v" customClass="RoundedView" customModule="Homework_3_1_1_Size_Classes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="537.5" width="390" height="522.5"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="joL-Mt-Gmd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5RT-ov-h9m" firstAttribute="leading" secondItem="joL-Mt-Gmd" secondAttribute="leading" constant="10" id="2yE-6J-Tbv"/>
+                            <constraint firstItem="5RT-ov-h9m" firstAttribute="top" secondItem="joL-Mt-Gmd" secondAttribute="top" constant="10" id="IcU-NV-v8k"/>
+                            <constraint firstItem="5RT-ov-h9m" firstAttribute="bottom" secondItem="joL-Mt-Gmd" secondAttribute="bottom" constant="-10" id="c17-pl-d8P"/>
+                            <constraint firstItem="5RT-ov-h9m" firstAttribute="centerX" secondItem="joL-Mt-Gmd" secondAttribute="centerX" id="xfl-K2-ptL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstStackView" destination="HKJ-9g-Pbj" id="AjW-gv-7KT"/>
+                        <outlet property="secondStackView" destination="rFh-PL-9zu" id="Zwm-4z-488"/>
+                        <outlet property="stackView" destination="5RT-ov-h9m" id="ER2-Ep-bDc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.09375" y="99.609375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
